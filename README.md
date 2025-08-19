@@ -991,118 +991,164 @@ Los modelos como Random Forest, que pueden capturar relaciones no lineales e int
 La dificultad para predecir la clase minoritaria (cancelación) en ambos modelos subraya la necesidad de técnicas adicionales si el objetivo principal es identificar a todos los clientes en riesgo (mejorar el recall de la clase 'Yes'), como el sobremuestreo de la clase minoritaria, el submuestreo de la clase mayoritaria, o el uso de algoritmos más adecuados para datos desbalanceados.
 En resumen, un modelo efectivo de predicción de cancelación debe dar un peso significativo a la antigüedad del cliente y al tipo de contrato, al tiempo que considera el tipo de internet, el método de pago y los servicios adicionales como indicadores importantes del comportamiento y riesgo de cancelación del cliente.
 ## 10.PLANES ESTRATÉGICOS PARA REDUCIR CANCELACIÓN (CHURN)
-ESTRATEGIA #1: RETENCIÓN TEMPRANA Y MITIGACIÓN DE RIESGOS INICIALES
-Objetivo Principal
-Dirigirse a nuevos clientes con tenencia < 9 meses, especialmente aquellos con características de alto riesgo:
 
-Contratos mes a mes
-Método de pago cheque electrónico
-Fibra óptica sin servicios adicionales
-Adultos mayores
-Acciones Específicas
-Programa de Onboarding Mejorado
-Tutoriales personalizados por segmento (especial atención a adultos mayores y servicios complejos como fibra óptica)
-Soporte técnico proactivo en las primeras semanas
-Línea de contacto dedicada para nuevas activaciones
-Detección Temprana de Insatisfacción
-Encuestas de satisfacción programadas a los 15 días, 3 meses y 6 meses
-Sistema de alertas para identificar problemas antes de que escalen a cancelaciones
-Incentivos para Compromiso a Largo Plazo
-Descuentos significativos para clientes mes a mes que cambien a contratos anuales
-Servicios premium gratuitos por tiempo limitado como incentivo de conversión
-KPIs Clave
-Reducción de tasa de cancelación en clientes < 9 meses
-% de nuevos clientes que migran a contratos a largo plazo
-Puntuaciones de satisfacción temprana
-ESTRATEGIA #2: ACTIVACIÓN DE SERVICIOS DE VALOR Y ENGAGEMENT CONTINUO
-Objetivo Principal
+##10.1.OBJETIVOS ESTRATÉGICOS GENERALES
+
+###**Metas Cuantificables**
+1. **Reducir tasa de cancelación** en segmentos de alto riesgo identificados
+2. **Mejorar percepción de valor** en segmentos de alto gasto mensual
+3. **Aumentar adopción** de contratos a largo plazo y métodos de pago automáticos
+4. **Incrementar engagement** y uso de servicios de valor añadido
+
+###**Segmentos Prioritarios (Según Datos del Análisis)**
+- **CRÍTICO**: Contrato mes a mes + Cheque electrónico = **53.73% de cancelación**
+- **ALTO RIESGO**: Fibra óptica sin servicios adicionales = **55.42% de cancelación**
+- **OBJETIVO**: Contrato 2 años + Cheque postal = **0.80% de cancelación** (modelo a replicar)
+
+---
+
+##**IMPLEMENTACIÓN Y SEGUIMIENTO**
+
+###**Fases de Implementación**
+1. **Fase 1 (0-3 meses)**: Implementar detección temprana y onboarding mejorado
+2. **Fase 2 (3-6 meses)**: Lanzar campañas de activación y bundling de servicios
+3. **Fase 3 (6-12 meses)**: Ejecutar segmentación completa y programas VIP
+4. **Fase 4 (12+ meses)**: Optimización continua y revisión estratégica de precios
+
+### **Monitoreo Continuo**
+- **Dashboards en tiempo real** de métricas de churn por segmento
+- **Alertas automáticas** para clientes en riesgo
+- **Reportes mensuales** de efectividad de cada estrategia
+- **Análisis trimestral** de ROI y ajustes estratégicos
+
+---
+
+*Este plan integral aborda los factores de riesgo más críticos identificados en el análisis, priorizando acciones específicas y medibles para los segmentos de mayor vulnerabilidad a la cancelación.*
+
+##10.2. PLANES ESTRATÉGICOS PARA REDUCIR CANCELACIÓN (CHURN)
+
+##10.2. PLANES ESTRATÉGICOS PARA REDUCIR CANCELACIÓN (CHURN)
+
+### **10.2.1.ESTRATEGIA 1: RETENCIÓN TEMPRANA Y MITIGACIÓN DE RIESGOS INICIALES**
+
+**Objetivo Principal**
+
+Dirigirse a **nuevos clientes con tenencia < 9 meses**, especialmente aquellos con características de alto riesgo:
+- Contratos mes a mes
+- Método de pago cheque electrónico
+- Fibra óptica sin servicios adicionales
+- Adultos mayores
+
+###**Acciones Específicas**
+
+####**Programa de Onboarding Mejorado**
+- **Tutoriales personalizados** por segmento (especial atención a adultos mayores y servicios complejos como fibra óptica)
+- **Soporte técnico proactivo** en las primeras semanas
+- **Línea de contacto dedicada** para nuevas activaciones
+
+####**Detección Temprana de Insatisfacción**
+- **Encuestas de satisfacción programadas** a los 15 días, 3 meses y 6 meses
+- **Sistema de alertas** para identificar problemas antes de que escalen a cancelaciones
+
+####**Incentivos para Compromiso a Largo Plazo**
+- **Descuentos significativos** para clientes mes a mes que cambien a contratos anuales
+- **Servicios premium gratuitos** por tiempo limitado como incentivo de conversión
+
+###**KPIs Clave**
+- Reducción de tasa de cancelación en clientes < 9 meses
+- % de nuevos clientes que migran a contratos a largo plazo
+- Puntuaciones de satisfacción temprana
+
+---
+
+###10.2.2**ESTRATEGIA 2: ACTIVACIÓN DE SERVICIOS DE VALOR Y ENGAGEMENT CONTINUO**
+
+###**Objetivo Principal**
 Maximizar el engagement de clientes con:
+- **Bajo engagement** (< 1.2 cuentas diarias)
+- **Servicios de internet sin complementos** (sin Seguridad Online, Protección de Dispositivo o Soporte Técnico)
 
-Bajo engagement (< 1.2 cuentas diarias)
-Servicios de internet sin complementos (sin Seguridad Online, Protección de Dispositivo o Soporte Técnico)
-Acciones Específicas
-Campañas de Activación Digital
-Educación sobre beneficios de servicios que reducen churn
-Canales múltiples: email, SMS, tutoriales web/app, webinars
-Contenido adaptado por segmento demográfico
-Ofertas de Paquetes Estratégicos
-Bundles atractivos: Internet + Seguridad + Protección a precio preferencial
-Promociones cruzadas basadas en el perfil de uso del cliente
-Evaluación de Valor Percibido
-Análisis profundo de por qué clientes de alto gasto (Fibra Óptica) no perciben valor suficiente
-Ajustes en comunicación de propuesta de valor
-KPIs Clave
-Aumento % de adopción de servicios complementarios
-Mejora en puntuación de engagement
-Reducción de churn en segmentos de bajo engagement previo
-ESTRATEGIA #3: SEGMENTACIÓN POR RIESGO Y VALOR PARA RETENCIÓN DIRIGIDA
-Matriz de Segmentación
-ALTO RIESGO + ALTO VALOR
-Ejemplo: Fibra Óptica + Alto gasto + Contrato mes a mes + Cheque Electrónico
+### **Acciones Específicas**
 
-Programa VIP de retención proactiva
-Gestor de cuentas dedicado
-Ofertas personalizadas para migrar a contratos largos y pago automático
-Resolución prioritaria de problemas
-ALTO RIESGO + VALOR MODERADO/BAJO
-Ejemplo: Contrato mes a mes + Cheque Electrónico
+####**Campañas de Activación Digital**
+- **Educación sobre beneficios** de servicios que reducen churn
+- **Canales múltiples**: email, SMS, tutoriales web/app, webinars
+- **Contenido adaptado** por segmento demográfico
 
-Campañas masivas segmentadas
-Descuentos temporales
-Beneficios por cambio de método de pago
-Simplificación de procesos
-BAJO RIESGO + ALTO VALOR
-Ejemplo: Contrato 2 años + Pago Automático + Fibra + Servicios Adicionales
+####**Ofertas de Paquetes Estratégicos**
+- **Bundles atractivos**: Internet + Seguridad + Protección a precio preferencial
+- **Promociones cruzadas** basadas en el perfil de uso del cliente
 
-Programas de fidelización
-Ofertas exclusivas por lealtad
-Acceso anticipado a nuevos servicios
-Comunicación VIP personalizada
-BAJO RIESGO + BAJO VALOR
-Ejemplo: Sin internet + Bajo gasto
+####**Evaluación de Valor Percibido**
+- **Análisis profundo** de por qué clientes de alto gasto (Fibra Óptica) no perciben valor suficiente
+- **Ajustes en comunicación** de propuesta de valor
 
-Ofertas de upgrade a planes básicos DSL
-Énfasis en facilidad de uso y bajo costo
-Mantenimiento de experiencia positiva actual
-ESTRATEGIA #4: REVISIÓN ESTRATÉGICA DE PRECIOS Y PROPUESTA DE VALOR
-Análisis y Optimización
-Revisión de Estructura de Precios
-Análisis más allá del umbral de $35 mensual
-Enfoque en segmentos de alto riesgo independiente de cuota actual
-Evaluación precio-valor percibido especialmente en Fibra Óptica
-Creación de Planes de Entrada Estratégicos
-Ofertas para nuevos clientes que fomenten contratos largos desde el inicio
-Incentivos automáticos para métodos de pago preferenciales
-Bundling de Servicios de Valor
-Paquetes integrados con servicios de seguridad y soporte
-Precios atractivos que reduzcan sensibilidad al costo individual
-Propuesta de valor sólida y comunicada claramente
-Comunicación del Valor Total
-Enfoque holístico: velocidad, seguridad, soporte, fiabilidad
-Justificación clara especialmente para servicios premium como Fibra Óptica
-Educación continua sobre beneficios recibidos
-OBJETIVOS ESTRATÉGICOS GENERALES
-Metas Cuantificables
-Reducir tasa de cancelación en segmentos de alto riesgo identificados
-Mejorar percepción de valor en segmentos de alto gasto mensual
-Aumentar adopción de contratos a largo plazo y métodos de pago automáticos
-Incrementar engagement y uso de servicios de valor añadido
-Segmentos Prioritarios (Según Datos del Análisis)
-CRÍTICO: Contrato mes a mes + Cheque electrónico = 53.73% de cancelación
-ALTO RIESGO: Fibra óptica sin servicios adicionales = 55.42% de cancelación
-OBJETIVO: Contrato 2 años + Cheque postal = 0.80% de cancelación (modelo a replicar)
-IMPLEMENTACIÓN Y SEGUIMIENTO
-Fases de Implementación
-Fase 1 (0-3 meses): Implementar detección temprana y onboarding mejorado
-Fase 2 (3-6 meses): Lanzar campañas de activación y bundling de servicios
-Fase 3 (6-12 meses): Ejecutar segmentación completa y programas VIP
-Fase 4 (12+ meses): Optimización continua y revisión estratégica de precios
-Monitoreo Continuo
-Dashboards en tiempo real de métricas de churn por segmento
-Alertas automáticas para clientes en riesgo
-Reportes mensuales de efectividad de cada estrategia
-Análisis trimestral de ROI y ajustes estratégicos
-Este plan integral aborda los factores de riesgo más críticos identificados en el análisis, priorizando acciones específicas y medibles para los segmentos de mayor vulnerabilidad a la cancelación.
+### **KPIs Clave**
+- Aumento % de adopción de servicios complementarios
+- Mejora en puntuación de engagement
+- Reducción de churn en segmentos de bajo engagement previo
+
+---
+
+
+### 10.2.3.**ESTRATEGIA 3: SEGMENTACIÓN POR RIESGO Y VALOR PARA RETENCIÓN DIRIGIDA
+
+###**Matriz de Segmentación**
+
+####**ALTO RIESGO + ALTO VALOR** 
+*Ejemplo: Fibra Óptica + Alto gasto + Contrato mes a mes + Cheque Electrónico*
+- **Programa VIP de retención proactiva**
+- **Gestor de cuentas dedicado**
+- **Ofertas personalizadas** para migrar a contratos largos y pago automático
+- **Resolución prioritaria** de problemas
+
+####**ALTO RIESGO + VALOR MODERADO/BAJO**
+*Ejemplo: Contrato mes a mes + Cheque Electrónico*
+- **Campañas masivas segmentadas**
+- **Descuentos temporales**
+- **Beneficios por cambio** de método de pago
+- **Simplificación de procesos**
+
+####**BAJO RIESGO + ALTO VALOR**
+*Ejemplo: Contrato 2 años + Pago Automático + Fibra + Servicios Adicionales*
+- **Programas de fidelización**
+- **Ofertas exclusivas por lealtad**
+- **Acceso anticipado** a nuevos servicios
+- **Comunicación VIP personalizada**
+
+####**BAJO RIESGO + BAJO VALOR**
+*Ejemplo: Sin internet + Bajo gasto*
+- **Ofertas de upgrade** a planes básicos DSL
+- **Énfasis en facilidad de uso** y bajo costo
+- **Mantenimiento** de experiencia positiva actual
+
+---
+
+###10.2.4**ESTRATEGIA 4: REVISIÓN ESTRATÉGICA DE PRECIOS Y PROPUESTA DE VALOR
+
+###**Análisis y Optimización**
+
+####**Revisión de Estructura de Precios**
+- **Análisis más allá** del umbral de $35 mensual
+- **Enfoque en segmentos** de alto riesgo independiente de cuota actual
+- **Evaluación precio-valor percibido** especialmente en Fibra Óptica
+
+####**Creación de Planes de Entrada Estratégicos**
+- **Ofertas para nuevos clientes** que fomenten contratos largos desde el inicio
+- **Incentivos automáticos** para métodos de pago preferenciales
+
+####**Bundling de Servicios de Valor**
+- **Paquetes integrados** con servicios de seguridad y soporte
+- **Precios atractivos** que reduzcan sensibilidad al costo individual
+- **Propuesta de valor sólida** y comunicada claramente
+
+####**Comunicación del Valor Total**
+- **Enfoque holístico**: velocidad, seguridad, soporte, fiabilidad
+- **Justificación clara** especialmente para servicios premium como Fibra Óptica
+- **Educación continua** sobre beneficios recibidos
+
+---
+
 ## TECNOLOGIAS USADAS
 
 • Python 3 
